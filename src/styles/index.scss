@@ -1,5 +1,6 @@
 // modules
 @import "modules/colors";
+@import "modules/base";
 
 // ui-kit styles
 @import "ui-kit/Panel";
@@ -8,3 +9,4 @@
 // app parts styles
 @import "parts/Topline";
 @import "parts/Footer";
+@import "ui-kit/TextAreaWithLabels";

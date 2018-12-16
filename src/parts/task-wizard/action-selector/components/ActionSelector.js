@@ -8,8 +8,10 @@ import actionOptions from '../data/actionOptions';
 const panelTitle = 'Выберите действие';
 
 const ActionSelector = props => {
+  const { isActionSelectorValid } = props;
+
   return (
-    <Panel title={panelTitle}>
+    <Panel title={panelTitle} checkValidation isValid={isActionSelectorValid}>
       <OptionSelector
         options={actionOptions}
         selectedOption={props.selectedAction}
@@ -21,7 +23,8 @@ const ActionSelector = props => {
 
 ActionSelector.propTypes = {
   selectedAction: PropTypes.string,
-  onSetSelectedAction: PropTypes.func.isRequired
+  onSetSelectedAction: PropTypes.func.isRequired,
+  isActionSelectorValid: PropTypes.bool.isRequired
 };
 
 ActionSelector.defaultProps = {

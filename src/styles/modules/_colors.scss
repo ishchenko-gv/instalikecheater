@@ -10,9 +10,15 @@ $purple: #B413EC;
 $pink: #FF1493;
 $brown: #A52A2A;
 $grey: #A0A0A0;
+$light-grey: #EEEEEE;
 $black: #000000;
+$white: #FFFFFF;
 
-$primaryColor   : $pink;
+$primaryColor   : $blue;
 $secondaryColor : $grey;
 
-$kit-border: rgba(34,36,38,.15);
+$kit-background: $white;
+$kit-border: rgba(34, 36, 38, .15);
+$kit-shadow: 0px 2px 12px -5px rgba(0, 0, 0, 0.5);
+
+$base-background: rgba($light-grey, .3);

@@ -12,7 +12,7 @@ export default [
   {
     label: 'Отписка',
     value: 'unsubscription',
-    icon: 'bell outline'
+    icon: 'bell slash'
   },
   {
     label: 'Комментарий',

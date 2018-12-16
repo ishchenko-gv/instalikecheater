@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { Container } from 'semantic-ui-react';
 
 import Topline from '../../parts/topline/components/Topline';
@@ -8,17 +8,19 @@ import cssProjectPrefix from '../../constants/css-project-prefix';
 
 const Layout = () => {
   return (
-    <Container>
+    <Fragment>
       <header className={`${cssProjectPrefix}-header`}>
         <Topline />
       </header>
-      <main>
-        <TaskWizard />
-      </main>
-      <footer className={`${cssProjectPrefix}-footer`}>
-        <Footer />
-      </footer>
-    </Container>
+      <Container>
+        <main>
+          <TaskWizard />
+        </main>
+        <footer className={`${cssProjectPrefix}-footer`}>
+          <Footer />
+        </footer>
+      </Container>
+    </Fragment>
   );
 };
 

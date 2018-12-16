@@ -1,0 +1,9 @@
+.ilc-panel {
+  padding: 1.5em;
+  border-radius: .5em;
+  border: 1px solid $kit-border;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+}

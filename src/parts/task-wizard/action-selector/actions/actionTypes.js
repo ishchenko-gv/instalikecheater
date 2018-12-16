@@ -1,0 +1,1 @@
+export const SET_SELECTED_ACTION = 'action-selector/set-selected-action';

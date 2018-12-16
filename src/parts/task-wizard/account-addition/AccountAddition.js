@@ -2,7 +2,7 @@ import React from 'react';
 
 import Panel from '../../../ui-kit/Panel/';
 import AccountFormContainer from './containers/AccountFormContainer';
-import AccountListContainer from './containers/AccountListContainer';
+import AccountsListContainer from './containers/AccountsListContainer';
 
 const panelTitle = 'Добавить Instagram аккаунт';
 
@@ -10,7 +10,7 @@ const AccountAddition = () => {
   return (
     <Panel title={panelTitle}>
       <AccountFormContainer />
-      <AccountListContainer />
+      <AccountsListContainer />
     </Panel>
   );
 };

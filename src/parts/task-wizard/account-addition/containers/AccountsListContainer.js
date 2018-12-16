@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import { setActiveAccount } from '../actions';
-import AccountList from '../components/AccountList';
+import AccountsList from '../components/AccountsList';
 
 const mapStateToProps = state => ({
   accountList: state.taskWizard.accountAddition.accounts,
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(AccountList);
+)(AccountsList);

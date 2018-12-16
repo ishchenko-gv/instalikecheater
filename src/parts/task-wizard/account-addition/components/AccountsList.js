@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Button } from 'semantic-ui-react';
 
-class AccountList extends Component {
+class AccountsList extends Component {
   handleButtonClick = id => {
     const { onSetActiveAccount } = this.props;
 
@@ -31,4 +31,4 @@ class AccountList extends Component {
   }
 }
 
-export default AccountList;
+export default AccountsList;

@@ -1,4 +1,6 @@
-.ilc-panel {
+@import "../modules/project-prefix";
+
+.#{$project-prefix}-panel {
   padding: 1.5em;
   border-radius: .5em;
   border: 1px solid $kit-border;

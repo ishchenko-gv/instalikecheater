@@ -1,10 +1,12 @@
+@import "../modules/project-prefix";
+
 $margin_bottom_correction: 1em;
 
-.ilc-optionSelector__content {
+.#{$project-prefix}-optionSelector__content {
   margin-bottom: -$margin_bottom_correction;
 }
 
-.ilc-optionSelector__button-wrapper {
+.#{$project-prefix}-optionSelector__button-wrapper {
   display: inline-block;
   margin-bottom: $margin_bottom_correction;
 

@@ -1,3 +1,5 @@
-.ilc-header {
-  padding: 1em 0;
+@import "../modules/project-prefix";
+
+.#{$project-prefix}-header {
+  padding: 2em 0;
 }

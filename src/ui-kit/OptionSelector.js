@@ -2,15 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Icon } from 'semantic-ui-react';
 
+import cssProjectPrefix from '../constants/css-project-prefix';
+
 const OptionSelector = props => {
   const { options, selectedOption, onChangeHandler, color } = props;
 
   return (
-    <div className='ilc-optionSelector__content'>
+    <div className={`${cssProjectPrefix}-optionSelector__content`}>
       {options.map(option => (
         <span
           key={option.value}
-          className='ilc-optionSelector__button-wrapper'
+          className={`${cssProjectPrefix}-optionSelector__button-wrapper`}
         >
           <Button
             basic={option.value !== selectedOption}

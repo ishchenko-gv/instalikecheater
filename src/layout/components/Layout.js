@@ -8,8 +8,12 @@ import TaskWizard from '../../parts/task-wizard/TaskWizard';
 const Layout = () => {
   return (
     <Container>
-      <Topline />
-      <TaskWizard />
+      <header className='ilc-header'>
+        <Topline />
+      </header>
+      <main>
+        <TaskWizard />
+      </main>
     </Container>
   );
 };

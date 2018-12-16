@@ -5,11 +5,9 @@ import logo from '../../../img/logo.svg';
 
 const Topline = () => {
   return (
-    <header className='ilc-header'>
-      <Header as='h1'>
-        <img src={logo} alt='' /> INSTALIKECHEATER
-      </Header>
-    </header>
+    <Header as='h1'>
+      <img src={logo} alt='' /> INSTALIKECHEATER
+    </Header>
   );
 };
 

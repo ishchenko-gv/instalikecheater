@@ -1,0 +1,14 @@
+$margin_bottom_correction: 1em;
+
+.ilc-optionSelector__content {
+  margin-bottom: -$margin_bottom_correction;
+}
+
+.ilc-optionSelector__button-wrapper {
+  display: inline-block;
+  margin-bottom: $margin_bottom_correction;
+
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+}

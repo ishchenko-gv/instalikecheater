@@ -19,9 +19,9 @@ class AccountsList extends Component {
           return (
             <Button
               key={account}
-              active={isActiveAccount}
+              inverted={!isActiveAccount}
               content={account}
-              color='purple'
+              color='blue'
               onClick={() => this.handleButtonClick(account)}
             />
           );

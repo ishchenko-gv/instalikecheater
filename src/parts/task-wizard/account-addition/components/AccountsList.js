@@ -1,34 +1,30 @@
-import React, { Component, Fragment } from 'react';
-import { Button } from 'semantic-ui-react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class AccountsList extends Component {
-  handleButtonClick = id => {
-    const { onSetActiveAccount } = this.props;
+import OptionSelector from '../../../../ui-kit/OptionSelector';
 
-    onSetActiveAccount(id);
-  };
+function AccountsList (props) {
+  const { accountsList, activeAccount, onSetActiveAccount } = props;
+  const mappedAccountList = accountsList.map(account => ({ value: account, label: account }));
 
-  render() {
-    const { accountList, activeAccount } = this.props;
-
-    return (
-      <Fragment>
-        {accountList.map(account => {
-          const isActiveAccount = account === activeAccount;
-
-          return (
-            <Button
-              key={account}
-              inverted={!isActiveAccount}
-              content={account}
-              color='blue'
-              onClick={() => this.handleButtonClick(account)}
-            />
-          );
-        })}
-      </Fragment>
-    );
-  }
+  return (
+    <OptionSelector
+      options={mappedAccountList}
+      selectedOption={activeAccount}
+      onChangeHandler={onSetActiveAccount}
+    />
+  );
 }
+
+AccountsList.propTypes = {
+  accountsList: PropTypes.array,
+  activeAccount: PropTypes.string,
+  onSetActiveAccount: PropTypes.func.isRequired
+};
+
+AccountsList.defaultProps = {
+  accountsList: [],
+  activeAccount: null
+};
 
 export default AccountsList;

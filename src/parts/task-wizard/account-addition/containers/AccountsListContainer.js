@@ -4,7 +4,7 @@ import { setActiveAccount } from '../actions';
 import AccountsList from '../components/AccountsList';
 
 const mapStateToProps = state => ({
-  accountList: state.taskWizard.accountAddition.accounts,
+  accountsList: state.taskWizard.accountAddition.accounts,
   activeAccount: state.taskWizard.accountAddition.activeAccount
 });
 

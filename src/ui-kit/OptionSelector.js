@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button, Icon } from 'semantic-ui-react';
 
 const OptionSelector = props => {
-  const { options, selectedOption, onChangeHandler } = props;
+  const { options, selectedOption, onChangeHandler, color } = props;
 
   return (
     <div className='ilc-optionSelector__content'>
@@ -13,8 +13,8 @@ const OptionSelector = props => {
           className='ilc-optionSelector__button-wrapper'
         >
           <Button
-            inverted={option.value !== selectedOption}
-            color='blue'
+            basic={option.value !== selectedOption}
+            color={!!color ? color : 'blue'}
             value={option.value}
             onClick={() => onChangeHandler(option.value)}
           >
@@ -32,11 +32,13 @@ const OptionSelector = props => {
 OptionSelector.propTypes = {
   options: PropTypes.array.isRequired,
   selectedOption: PropTypes.string,
-  onChangeHandler: PropTypes.func.isRequired
+  onChangeHandler: PropTypes.func.isRequired,
+  color: PropTypes.string
 };
 
 OptionSelector.defaultProps = {
-  selectedOption: null
+  selectedOption: null,
+  color: null
 };
 
 export default OptionSelector;

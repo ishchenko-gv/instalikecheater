@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Panel from '../../../ui-kit/Panel';
-import AccountFormContainer from './containers/AccountFormContainer';
-import AccountsListContainer from './containers/AccountsListContainer';
+import Panel from '../../../../ui-kit/Panel';
+import AccountFormContainer from '../containers/AccountFormContainer';
+import AccountsListContainer from '../containers/AccountsListContainer';
 
 const panelTitle = 'Добавить Instagram аккаунт';
 

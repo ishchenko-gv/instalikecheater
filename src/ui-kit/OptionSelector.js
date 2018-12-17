@@ -19,6 +19,7 @@ const OptionSelector = props => {
             color={!!color ? color : 'blue'}
             value={option.value}
             onClick={() => onChangeHandler(option.value)}
+            disabled={option.disabled}
           >
             {!!option.icon &&
               <Icon name={option.icon} />

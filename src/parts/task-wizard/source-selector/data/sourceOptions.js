@@ -17,6 +17,7 @@ export default [
   {
     label: 'Список пользователей',
     value: 'usersList',
-    icon: 'clipboard list'
+    icon: 'clipboard list',
+    disabled: true
   }
 ]

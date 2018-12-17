@@ -12,26 +12,31 @@ export default [
   {
     label: 'Отписка',
     value: 'unsubscription',
-    icon: 'bell slash'
+    icon: 'bell slash',
+    disabled: true
   },
   {
     label: 'Комментарий',
     value: 'comment',
-    icon: 'comment'
+    icon: 'comment',
+    disabled: true
   },
   {
     label: 'Лайк и подписка',
     value: 'likeAndSubscription',
-    icon: 'plus'
+    icon: 'plus',
+    disabled: true
   },
   {
     label: 'Директ',
     value: 'direct',
-    icon: 'mail'
+    icon: 'mail',
+    disabled: true
   },
   {
     label: 'Авто-директ',
     value: 'autodirect',
-    icon: 'mail square'
+    icon: 'mail square',
+    disabled: true
   }
 ]

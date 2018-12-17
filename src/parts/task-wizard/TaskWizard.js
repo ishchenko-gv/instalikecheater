@@ -4,6 +4,7 @@ import AccountAdditionContainer from './account-addition/components/AccountAddit
 import ActionSelectorContainer from './action-selector/containers/ActionSelectorContainer';
 import SourceSelectorContainer from './source-selector/containers/SourceSelectorContainer';
 import SourceParametersSetterContainer from './source-parameters-setter/containers/SourceParametersSetterContainer';
+import ActionParametersSetterContainer from './action-parameters-setter/containers/ActionParametersSetterContainer';
 
 const TaskWizard = () => {
   return (
@@ -12,6 +13,7 @@ const TaskWizard = () => {
       <ActionSelectorContainer />
       <SourceSelectorContainer />
       <SourceParametersSetterContainer />
+      <ActionParametersSetterContainer />
     </Fragment>
   );
 };

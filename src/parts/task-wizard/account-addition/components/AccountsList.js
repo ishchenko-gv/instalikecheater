@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import OptionSelector from '../../../../ui-kit/OptionSelector';
+import OptionSelector from '../../../../ui-kit/option-selector';
 
 function AccountsList (props) {
   const { accountsList, activeAccount, onSetActiveAccount } = props;

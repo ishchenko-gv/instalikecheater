@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Panel from '../../../../ui-kit/Panel';
-import TextAreaWithLabels from '../../../../ui-kit/TextAreaWithLabels';
+import Panel from '../../../../ui-kit/panel';
+import TextAreaWithLabels from '../../../../ui-kit/textarea-with-labels';
 
 const panelTitle = 'Введите хештэг(и) (без #)';
 

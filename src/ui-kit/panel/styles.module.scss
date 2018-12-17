@@ -1,0 +1,28 @@
+@import "../../styles/modules/colors";
+
+.panel {
+  position: relative;
+  padding: 2em;
+  border-radius: .5em;
+  background-color: $kit-background;
+  border: 1px solid $kit-border;
+  box-shadow: $kit-shadow;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.headerTitle {
+  margin: 0;
+}
+
+.validationCheck {
+  margin-left: .5em;
+}

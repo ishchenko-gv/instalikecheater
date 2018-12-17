@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Panel from '../../../../ui-kit/Panel';
-import TextAreaWithLabels from '../../../../ui-kit/TextAreaWithLabels';
+import Panel from '../../../../ui-kit/panel';
+import TextAreaWithLabels from '../../../../ui-kit/textarea-with-labels';
 
 const panelTitle = 'Введите логин(ы) пользователя-источника (без @)';
 

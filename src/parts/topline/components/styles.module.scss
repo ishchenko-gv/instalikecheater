@@ -1,0 +1,28 @@
+@import "../../../styles/modules/colors";
+
+$header-background: $primaryColor;
+$header-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.5);
+$header-title-color: $yellow;
+
+.header {
+  padding: 2em 0;
+  margin-bottom: 2em;
+  background-color: $header-background;
+  box-shadow: $header-shadow;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0 0 0 .5em;
+  color: $header-title-color;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.logo {
+  width: 40px;
+}

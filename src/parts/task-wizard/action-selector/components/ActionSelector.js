@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Panel from '../../../../ui-kit/Panel';
-import OptionSelector from '../../../../ui-kit/OptionSelector';
+import Panel from '../../../../ui-kit/panel';
+import OptionSelector from '../../../../ui-kit/option-selector';
 import actionOptions from '../data/actionOptions';
 
 const panelTitle = 'Выберите действие';

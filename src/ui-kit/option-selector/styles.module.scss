@@ -1,12 +1,10 @@
-@import "../modules/project-prefix";
-
 $margin_bottom_correction: 1em;
 
-.#{$project-prefix}-optionSelector__content {
+.content {
   margin-bottom: -$margin_bottom_correction;
 }
 
-.#{$project-prefix}-optionSelector__button-wrapper {
+.buttonWrapper {
   display: inline-block;
   margin-bottom: $margin_bottom_correction;
 
@@ -14,3 +12,4 @@ $margin_bottom_correction: 1em;
     margin-right: 1em;
   }
 }
+

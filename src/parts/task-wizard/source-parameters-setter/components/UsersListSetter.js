@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Panel from '../../../../ui-kit/Panel';
+import Panel from '../../../../ui-kit/panel';
 
 const panelTitle = 'Список пользователей';
 

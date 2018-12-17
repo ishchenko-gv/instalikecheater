@@ -2,21 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'semantic-ui-react';
 
-import cssProjectPrefix from '../constants/css-project-prefix';
+import styles from './styles.module.scss';
 
 const Panel = props => {
   const { title, children, checkValidation, isValid } = props;
 
   return (
-    <section className={`${cssProjectPrefix}-panel`}>
-      <header className={`${cssProjectPrefix}-panel__header`}>
+    <section className={styles.panel}>
+      <header className={styles.header}>
         {!!title &&
-          <h2 className={`${cssProjectPrefix}-panel__header-title`}>
+          <h2 className={styles.headerTitle}>
             {title}
           </h2>
         }
         {checkValidation &&
-          <span className={`${cssProjectPrefix}-panel__validation-check`}>
+          <span className={styles.validationCheck}>
             <Icon
               name='check circle outline'
               size='large'

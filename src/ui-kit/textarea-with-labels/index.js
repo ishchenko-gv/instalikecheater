@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Label, TextArea } from 'semantic-ui-react';
-import cssProjectPrefix from '../constants/css-project-prefix';
+
+import styles from './styles.module.scss';
 
 class TextAreaWithLabels extends Component {
   handleTextAreaChange = e => {
@@ -26,7 +27,7 @@ class TextAreaWithLabels extends Component {
         <Form>
           <TextArea rows={5} onChange={this.handleTextAreaChange} value={this.getTextAreaValue()} />
         </Form>
-        <div className={`${cssProjectPrefix}-textAreaWithLabels__labelsRow`}>
+        <div className={styles.labelsRow}>
           {list
             .filter(listItem => Boolean(listItem))
             .map(listItem => (

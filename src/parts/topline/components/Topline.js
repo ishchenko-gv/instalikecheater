@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'semantic-ui-react';
 
 import logo from '../../../img/logo.svg';
-import styles from './styles.module.scss';
+import styles from './topline.module.scss';
 
 const Topline = () => {
   return (

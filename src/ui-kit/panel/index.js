@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'semantic-ui-react';
 
-import styles from './styles.module.scss';
+import styles from './panel.module.scss';
 
 const Panel = props => {
   const { title, children, checkValidation, isValid } = props;

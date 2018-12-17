@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Label, TextArea } from 'semantic-ui-react';
 
-import styles from './styles.module.scss';
+import styles from './textAreaWithLabels.module.scss';
 
 class TextAreaWithLabels extends Component {
   handleTextAreaChange = e => {

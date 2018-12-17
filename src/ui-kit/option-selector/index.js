@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Icon } from 'semantic-ui-react';
 
-import styles from './styles.module.scss';
+import styles from './optionSelector.module.scss';
 
 const OptionSelector = props => {
   const { options, selectedOption, onChangeHandler, color } = props;

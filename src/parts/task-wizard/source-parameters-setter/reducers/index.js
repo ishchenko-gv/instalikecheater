@@ -5,7 +5,7 @@ const initialState = {
   users: [],
   lastDaysInteraction: {
     enabled: false,
-    daysCount: 7
+    daysCount: ''
   }
 };
 

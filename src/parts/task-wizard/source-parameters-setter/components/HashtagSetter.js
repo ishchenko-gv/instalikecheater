@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Panel from '../../../../ui-kit/panel';
 import TextAreaWithLabels from '../../../../ui-kit/textarea-with-labels';
+import LastDaysInteractionContainer from '../containers/LastDaysInteractionContainer';
 
 const panelTitle = 'Введите хештэг(и) (без #)';
 
@@ -12,6 +13,7 @@ function HashtagSetter (props) {
   return (
     <Panel title={panelTitle}>
       <TextAreaWithLabels list={hashtags} onTextAreaChange={onHashtagSetterChange} />
+      <LastDaysInteractionContainer />
     </Panel>
   );
 }

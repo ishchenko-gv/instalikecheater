@@ -27,13 +27,15 @@ class TextAreaWithLabels extends Component {
         <Form>
           <TextArea rows={5} onChange={this.handleTextAreaChange} value={this.getTextAreaValue()} />
         </Form>
-        <div className={styles.labelsRow}>
-          {list
-            .filter(listItem => Boolean(listItem))
-            .map(listItem => (
-              <Label key={listItem} color='blue'>{listItem}</Label>
-            ))}
-        </div>
+        {!!list.length &&
+          <div className={styles.labelsRow}>
+            {list
+              .filter(listItem => Boolean(listItem))
+              .map(listItem => (
+                <Label key={listItem} color='blue'>{listItem}</Label>
+              ))}
+          </div>
+        }
       </Fragment>
     );
   }

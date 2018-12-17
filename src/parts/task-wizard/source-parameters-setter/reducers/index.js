@@ -2,7 +2,11 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
   hashtags: [],
-  users: []
+  users: [],
+  lastDaysInteraction: {
+    enabled: false,
+    daysCount: 7
+  }
 };
 
 export default function (state = initialState, action) {
@@ -16,6 +20,22 @@ export default function (state = initialState, action) {
       return {
         ...state,
         users: action.users
+      };
+    case actionTypes.TOGGLE_LAST_DAYS_INTERACTION:
+      return {
+        ...state,
+        lastDaysInteraction: {
+          ...state.lastDaysInteraction,
+          enabled: !state.lastDaysInteraction.enabled
+        }
+      };
+    case actionTypes.SET_LAST_DAYS_INTERACTION:
+      return {
+        ...state,
+        lastDaysInteraction: {
+          ...state.lastDaysInteraction,
+          daysCount: action.daysCount
+        }
       };
     default:
       return state;

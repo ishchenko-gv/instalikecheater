@@ -8,23 +8,23 @@ const Panel = props => {
   const { title, children, checkValidation, isValid } = props;
 
   return (
-    <section className={styles.panel}>
-      <header className={styles.header}>
-        {!!title &&
-          <h2 className={styles.headerTitle}>
-            {title}
-          </h2>
-        }
-        {checkValidation &&
-          <span className={styles.validationCheck}>
-            <Icon
-              name='check circle outline'
-              size='large'
-              color={isValid ? 'green' : 'grey'}
-            />
-          </span>
-        }
-      </header>
+    <section className={styles.wrapper}>
+      {!!title &&
+        <header className={styles.header}>
+            <h2 className={styles.headerTitle}>
+              {title}
+            </h2>
+          {checkValidation &&
+            <span className={styles.validationCheck}>
+              <Icon
+                name='check circle outline'
+                size='large'
+                color={isValid ? 'green' : 'grey'}
+              />
+            </span>
+          }
+        </header>
+      }
       {children}
     </section>
   );

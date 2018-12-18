@@ -5,7 +5,7 @@ import Panel from '../../../../ui-kit/panel';
 import OptionSelector from '../../../../ui-kit/option-selector';
 import actionOptions from '../data/actionOptions';
 
-const panelTitle = 'Выберите действие';
+const panelTitle = 'Действие';
 
 const ActionSelector = props => {
   const { isActionSelectorValid } = props;

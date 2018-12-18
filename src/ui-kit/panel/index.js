@@ -11,9 +11,9 @@ const Panel = props => {
     <section className={styles.wrapper}>
       {!!title &&
         <header className={styles.header}>
-            <h2 className={styles.headerTitle}>
-              {title}
-            </h2>
+          <h2 className={styles.headerTitle}>
+            {title}
+          </h2>
           {checkValidation &&
             <span className={styles.validationCheck}>
               <Icon

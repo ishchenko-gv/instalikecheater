@@ -5,7 +5,7 @@ import { Checkbox } from 'semantic-ui-react';
 import Panel from '../../../../ui-kit/panel';
 import FilterParametersSetter from './FilterParametersSetter';
 
-const panelTitle = 'Использовать фильтр';
+const panelTitle = 'Фильтр';
 
 const FilterSetter = props => {
   const { isFilterEnabled, onFilterToggle } = props;

@@ -5,7 +5,7 @@ import Panel from '../../../../ui-kit/panel';
 import OptionSelector from '../../../../ui-kit/option-selector';
 import sourceOptions from '../data/sourceOptions';
 
-const panelTitle = 'Выберите источник';
+const panelTitle = 'Источник';
 
 const SourceSelector = props => {
   const { isSourceSelectorValid } = props;

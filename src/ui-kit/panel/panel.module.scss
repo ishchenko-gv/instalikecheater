@@ -16,13 +16,22 @@
 .header {
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
 }
 
 .headerTitle {
   margin: 0;
 }
 
+.toggleWrapper {
+  display: inline-block;
+  margin-left: 1em;
+  line-height: 0;
+}
+
 .validationCheck {
   margin-left: auto;
+}
+
+.content {
+  margin-top: 2em;
 }

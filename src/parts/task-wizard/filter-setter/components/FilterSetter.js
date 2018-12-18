@@ -11,15 +11,8 @@ const FilterSetter = props => {
   const { isFilterEnabled, onFilterToggle } = props;
 
   return (
-    <Panel title={panelTitle}>
-      <Checkbox
-        toggle
-        checked={isFilterEnabled}
-        onChange={onFilterToggle}
-      />
-      {isFilterEnabled &&
-        <FilterParametersSetter />
-      }
+    <Panel title={panelTitle} toggle onToggleChange={onFilterToggle} isEnabled={isFilterEnabled}>
+      <FilterParametersSetter />
     </Panel>
   );
 };

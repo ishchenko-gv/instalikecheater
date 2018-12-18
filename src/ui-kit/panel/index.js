@@ -1,11 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from 'semantic-ui-react';
+import { Icon, Checkbox } from 'semantic-ui-react';
 
 import styles from './panel.module.scss';
 
 const Panel = props => {
-  const { title, children, checkValidation, isValid } = props;
+  const {
+    title,
+    children,
+    checkValidation,
+    isValid,
+    toggle,
+    onToggleChange,
+    isEnabled
+  } = props;
 
   return (
     <section className={styles.wrapper}>
@@ -14,6 +22,11 @@ const Panel = props => {
           <h2 className={styles.headerTitle}>
             {title}
           </h2>
+          {toggle &&
+            <span className={styles.toggleWrapper}>
+              <Checkbox toggle onChange={onToggleChange} checked={isEnabled} />
+            </span>
+          }
           {checkValidation &&
             <span className={styles.validationCheck}>
               <Icon
@@ -25,7 +38,16 @@ const Panel = props => {
           }
         </header>
       }
-      {children}
+      {toggle && isEnabled &&
+        <div className={styles.content}>
+          {children}
+        </div>
+      }
+      {!toggle &&
+        <div className={styles.content}>
+          {children}
+        </div>
+      }
     </section>
   );
 };

@@ -14,6 +14,12 @@ $header-title-color: $yellow;
 .content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
 }
 
 .title {

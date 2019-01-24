@@ -15,7 +15,7 @@ const TaskWizard = () => {
       <SourceSelectorContainer />
       <SourceParametersSetterContainer />
       <ActionParametersSetterContainer />
-      <FilterSetterContainer />
+      {/*<FilterSetterContainer />*/}
     </Fragment>
   );
 };
